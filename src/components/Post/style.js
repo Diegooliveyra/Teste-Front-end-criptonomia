@@ -26,6 +26,9 @@ export const PostCard = styled.div`
   p {
     font-size: 14px;
     margin: 16px 0;
+    &:first-letter {
+      text-transform: capitalize;
+    }
   }
 
   footer {
