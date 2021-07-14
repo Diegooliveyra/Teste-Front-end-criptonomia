@@ -34,8 +34,14 @@ export const ModalStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
-    padding: 10px 0;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
 
     button {
       background: transparent;
@@ -53,8 +59,18 @@ export const ModalStyle = styled.div`
 
     ul li {
       margin: 15px 0;
+      height: 50px;
       border-bottom: 1px solid #ccc;
-      padding: 15px 0;
+      padding: 5px 0;
+
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      svg {
+        width: 30px;
+        margin-left: 15px;
+      }
     }
   }
 
@@ -71,5 +87,14 @@ export const ModalStyle = styled.div`
   p {
     font-size: 16px;
     line-height: 24px;
+  }
+`;
+
+export const ModalUserAvatar = styled.div`
+  display: flex;
+  align-items: flex-end;
+
+  svg {
+    margin-right: 10px;
   }
 `;

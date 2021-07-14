@@ -35,6 +35,12 @@ export const ModalStyle = styled.div`
     align-items: center;
     margin-bottom: 25px;
 
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
     button {
       background: transparent;
       border: 0;
@@ -52,7 +58,8 @@ export const ModalStyle = styled.div`
     overflow-x: hidden;
     ul li {
       margin: 15px 0;
-      border: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
       padding: 15px;
     }
   }

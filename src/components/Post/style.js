@@ -36,6 +36,10 @@ export const PostCard = styled.div`
       background: transparent;
       border: 0;
       cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
   }
 `;

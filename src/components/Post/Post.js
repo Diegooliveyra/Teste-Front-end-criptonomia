@@ -3,6 +3,10 @@ import useFetch from '../../hooks/useFetch';
 import { GET_USER } from '../../services/api';
 import { ModalComments } from '../ModalComments/ModalComments';
 import { ModalUser } from '../ModalUser/ModalUser';
+
+import { ReactComponent as AuthorButton } from '../../Assets/write.svg';
+import { ReactComponent as CommnentsButton } from '../../Assets/write.svg';
+
 import * as S from './style';
 
 export const Post = ({ dataPost }) => {
@@ -40,8 +44,14 @@ export const Post = ({ dataPost }) => {
             <h1>{post.title}</h1>
             <p>{post.body}</p>
             <footer>
-              <button onClick={() => handleClick(post.userId)}>User</button>
-              <button onClick={() => handleComments(post.id)}>Comments</button>
+              <button onClick={() => handleClick(post.userId)}>
+                <AuthorButton />
+                Author
+              </button>
+              <button onClick={() => handleComments(post.id)}>
+                <CommnentsButton />
+                Comments
+              </button>
             </footer>
           </S.PostCard>
         ))}
