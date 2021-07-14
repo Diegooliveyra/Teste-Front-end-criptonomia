@@ -5,6 +5,8 @@ import { ModalComments } from '../ModalComments/ModalComments';
 import { ModalUser } from '../ModalUser/ModalUser';
 import { Loading } from '../../Helper/Loading';
 
+import img from '../../Assets/dog.jpg';
+
 import { ReactComponent as AuthorButton } from '../../Assets/write.svg';
 import { ReactComponent as CommnentsButton } from '../../Assets/comments.svg';
 
@@ -42,21 +44,25 @@ export const Post = ({ dataPost }) => {
         {modalComments && (
           <ModalComments postId={postId} setModal={setModalComments} />
         )}
+
         {dataPost &&
           dataPost.map((post) => (
             <S.PostCard key={post.id}>
-              <Title>{post.title}</Title>
-              <p>{post.body}</p>
-              <footer>
-                <button onClick={() => handleClick(post.userId)}>
-                  <AuthorButton />
-                  Author
-                </button>
-                <button onClick={() => handleComments(post.id)}>
-                  <CommnentsButton />
-                  Comments
-                </button>
-              </footer>
+              <img src={img} alt="" />
+              <div>
+                <Title>{post.title}</Title>
+                <p>{post.body}</p>
+                <footer>
+                  <button onClick={() => handleClick(post.userId)}>
+                    <AuthorButton />
+                    About to author
+                  </button>
+                  <button onClick={() => handleComments(post.id)}>
+                    <CommnentsButton />
+                    Comments
+                  </button>
+                </footer>
+              </div>
             </S.PostCard>
           ))}
       </S.PostContainer>

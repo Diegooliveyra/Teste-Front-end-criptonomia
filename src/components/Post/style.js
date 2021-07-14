@@ -23,9 +23,21 @@ export const PostCard = styled.div`
     max-width: 100%;
   }
 
+  div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+
   p {
     font-size: 14px;
     margin: 16px 0;
+    flex: 1;
     &:first-letter {
       text-transform: capitalize;
     }
