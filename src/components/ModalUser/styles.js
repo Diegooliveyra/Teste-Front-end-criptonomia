@@ -24,6 +24,9 @@ export const ModalStyle = styled.div`
   border-radius: 5px;
   padding: 20px;
 
+  transform: translateY(-300px);
+  animation: up 0.5s forwards;
+
   @media (max-width: 680px) {
     height: 95vh;
     margin: 10px;
@@ -96,5 +99,11 @@ export const ModalUserAvatar = styled.div`
 
   svg {
     margin-right: 10px;
+  }
+
+  @keyframes up {
+    to {
+      transform: translateY(0);
+    }
   }
 `;

@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
   :root {
-    --brand-primary-color: #FF124B;
+    --brand-primary-color: #211e22  ;
     --text-color: #333333;
     --full-white: #ffffff;
     --primary-shadow: 0px 18px 41px rgba(0, 0, 0, 0.05);
@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  
 `;
 export default GlobalStyles;
 
@@ -37,4 +39,12 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+`;
+
+export const Title = styled.h1`
+  color: var(--brand-primary-color);
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
 `;

@@ -24,6 +24,9 @@ export const ModalStyle = styled.div`
   border-radius: 5px;
   padding: 20px;
 
+  transform: translateY(-300px);
+  animation: up 0.5s forwards;
+
   @media (max-width: 680px) {
     height: 95vh;
     margin: 10px;
@@ -72,6 +75,10 @@ export const ModalStyle = styled.div`
 
   h2 {
     font-size: 20px;
+
+    &:first-letter {
+      text-transform: capitalize;
+    }
   }
 
   span {
@@ -83,5 +90,15 @@ export const ModalStyle = styled.div`
   p {
     font-size: 16px;
     line-height: 24px;
+
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  @keyframes up {
+    to {
+      transform: translateY(0);
+    }
   }
 `;
