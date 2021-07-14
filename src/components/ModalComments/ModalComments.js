@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
-import { Loading } from '../../Helper/Loading';
+import { Loading } from '../../helper/Loading';
 import { GET_COMMENTS } from '../../services/api';
 
-import { ReactComponent as CommnentsButton } from '../../Assets/comments.svg';
-import { ReactComponent as CloseButton } from '../../Assets/close.svg';
+import { ReactComponent as CommnentsButton } from '../../assets/comments.svg';
+import { ReactComponent as CloseButton } from '../../assets/close.svg';
 
 import * as S from './styles';
 
