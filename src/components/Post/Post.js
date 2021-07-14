@@ -39,8 +39,10 @@ export const Post = ({ dataPost }) => {
           <S.PostCard key={post.id}>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
-            <button onClick={() => handleClick(post.userId)}>User</button>
-            <button onClick={() => handleComments(post.id)}>Comments</button>
+            <footer>
+              <button onClick={() => handleClick(post.userId)}>User</button>
+              <button onClick={() => handleComments(post.id)}>Comments</button>
+            </footer>
           </S.PostCard>
         ))}
     </S.PostContainer>
