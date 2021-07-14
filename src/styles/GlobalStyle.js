@@ -11,14 +11,13 @@ const GlobalStyles = createGlobalStyle`
   }
   :root {
     --brand-primary-color: #FF124B;
-    --full-black: #000000;
-    --text-secondary-color: #333333;
+    --text-color: #333333;
     --full-white: #ffffff;
     --primary-shadow: 0px 18px 41px rgba(0, 0, 0, 0.05);
     --font-family-primary: 'Poppins', sans-serif;
   }
-  body {
-    color: var(--full-black);
+  body, button {
+    color: var(--text-color);
     font-family: var(--font-family-primary);
   }
   body, button, input, h1, h2, h3, h4, h5, h6 {

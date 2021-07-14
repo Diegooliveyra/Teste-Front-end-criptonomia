@@ -34,11 +34,22 @@ export const ModalStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+
+    button {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   div {
     max-height: 80vh;
     overflow: scroll;
+    overflow-x: hidden;
     ul li {
       margin: 15px 0;
       border: 1px solid #ccc;

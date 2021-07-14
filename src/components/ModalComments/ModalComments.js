@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
 import { GET_COMMENTS } from '../../services/api';
+
+import { ReactComponent as CloseButton } from '../../Assets/close.svg';
+
 import * as S from './styles';
 
 export const ModalComments = ({ postId, setModal }) => {
@@ -17,7 +20,9 @@ export const ModalComments = ({ postId, setModal }) => {
       <S.ModalStyle>
         <header>
           <h1>Comentarios:</h1>
-          <button onClick={() => setModal(false)}>fechar</button>
+          <button onClick={() => setModal(false)}>
+            <CloseButton />
+          </button>
         </header>
         <div>
           <ul>
