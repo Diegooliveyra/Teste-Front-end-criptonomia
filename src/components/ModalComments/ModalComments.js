@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
 import { GET_COMMENTS } from '../../services/api';
 
-import { ReactComponent as CommnentsButton } from '../../Assets/write.svg';
+import { ReactComponent as CommnentsButton } from '../../Assets/comments.svg';
 import { ReactComponent as CloseButton } from '../../Assets/close.svg';
 
 import * as S from './styles';
