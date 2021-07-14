@@ -1,5 +1,13 @@
+import GlobalStyles from './styles/GlobalStyle';
+import { Home } from './pages/Home';
+
 function App() {
-  return <div className="App">Ola</div>;
+  return (
+    <>
+      <Home />
+      <GlobalStyles />
+    </>
+  );
 }
 
 export default App;

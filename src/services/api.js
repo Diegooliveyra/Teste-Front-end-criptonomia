@@ -20,3 +20,13 @@ export const GET_POST = (id) => {
     },
   };
 };
+
+export const GET_COMMENTS = (id) => {
+  return {
+    endpoint: `${base_url_post}/${id}/comments`,
+    options: {
+      method: 'GET',
+      cache: 'no-store',
+    },
+  };
+};
