@@ -14,10 +14,23 @@ export const ModalComments = ({ postId, setModal }) => {
 
   return (
     <S.ModalContainer>
-      <button onClick={() => setModal(false)}>fechar</button>
-      {data.map((comment) => (
-        <h1 key={comment.id}>{comment.name}</h1>
-      ))}
+      <S.ModalStyle>
+        <header>
+          <h1>Comentarios:</h1>
+          <button onClick={() => setModal(false)}>fechar</button>
+        </header>
+        <div>
+          <ul>
+            {data.map((comment) => (
+              <li>
+                <h2>{comment.name}</h2>
+                <span>Email: {comment.email}</span>
+                <p key={comment.id}>{comment.body}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </S.ModalStyle>
     </S.ModalContainer>
   );
 };
