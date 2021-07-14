@@ -7,34 +7,40 @@ import * as S from './style';
 
 export const Post = ({ dataPost }) => {
   const { request, loading, data, error } = useFetch();
-  const [id, setId] = useState(1);
+  const [userId, setUserId] = useState(1);
+  const [postId, setPostId] = useState(1);
   const [modalUser, setModalUser] = useState(false);
   const [modalComments, setModalComments] = useState(false);
 
   useEffect(() => {
-    const { endpoint, options } = GET_USER(id);
-
+    const { endpoint, options } = GET_USER(userId);
+    console.log(userId);
     request(endpoint, options);
-  }, [request, id]);
+  }, [request, userId]);
 
   function handleClick(id) {
-    setId(id);
+    setUserId(id);
+    setModalUser(true);
+  }
+
+  function handleComments(id) {
+    setPostId(id);
     setModalComments(true);
   }
 
   return (
     <S.PostContainer>
       {modalUser && <ModalUser data={data} setModal={setModalUser} />}
+      {modalComments && (
+        <ModalComments postId={postId} setModal={setModalComments} />
+      )}
       {dataPost &&
         dataPost.map((post) => (
           <S.PostCard key={post.id}>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
-            <button onClick={() => setModalUser(true)}>User</button>
-            <button onClick={() => handleClick(post.userId)}>Comments</button>
-            {modalComments && (
-              <ModalComments id={post.id} setModal={setModalComments} />
-            )}
+            <button onClick={() => handleClick(post.userId)}>User</button>
+            <button onClick={() => handleComments(post.id)}>Comments</button>
           </S.PostCard>
         ))}
     </S.PostContainer>

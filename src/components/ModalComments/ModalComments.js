@@ -3,14 +3,14 @@ import useFetch from '../../hooks/useFetch';
 import { GET_COMMENTS } from '../../services/api';
 import * as S from './styles';
 
-export const ModalComments = ({ id, setModal }) => {
+export const ModalComments = ({ postId, setModal }) => {
   const { request, loading, data, error } = useFetch();
 
   useEffect(() => {
-    const { endpoint, options } = GET_COMMENTS(id);
+    const { endpoint, options } = GET_COMMENTS(postId);
 
     request(endpoint, options);
-  }, [request]);
+  }, [request, postId]);
 
   return (
     <S.ModalContainer>
