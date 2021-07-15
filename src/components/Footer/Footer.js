@@ -1,3 +1,5 @@
+import { ScroolToTop } from '../ScroolToTop/ScroolToTop';
+
 import * as S from './styles.js';
 
 export const Footer = () => {
@@ -9,6 +11,7 @@ export const Footer = () => {
           Diego Oliveira
         </a>
       </p>
+      <ScroolToTop />
     </S.Footer>
   );
 };

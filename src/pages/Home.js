@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { GET_POST } from '../services/api';
 
 export const Home = () => {
-  const { request, loading, data, error } = useFetch();
+  const { request, data } = useFetch();
 
   useEffect(() => {
     const { endpoint, options } = GET_POST('');

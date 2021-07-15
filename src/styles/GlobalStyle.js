@@ -16,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
     --primary-shadow: 0px 18px 41px rgba(0, 0, 0, 0.05);
     --font-family-primary: 'Poppins', sans-serif;
   }
+
+  body, html {
+    scroll-behavior: smooth;
+  }
   body, button {
     color: var(--text-color);
     font-family: var(--font-family-primary);

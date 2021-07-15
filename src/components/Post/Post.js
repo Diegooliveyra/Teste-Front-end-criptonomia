@@ -22,7 +22,6 @@ export const Post = ({ dataPost }) => {
 
   useEffect(() => {
     const { endpoint, options } = GET_USER(userId);
-    console.log(userId);
     request(endpoint, options);
   }, [request, userId]);
 
