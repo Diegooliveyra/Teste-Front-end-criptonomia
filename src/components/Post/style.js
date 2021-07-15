@@ -6,6 +6,7 @@ export const PostContainer = styled.section`
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 120px;
 `;
 
 export const PostCard = styled.div`
