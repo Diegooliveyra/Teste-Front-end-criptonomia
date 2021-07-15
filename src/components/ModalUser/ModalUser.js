@@ -1,8 +1,8 @@
-import { ReactComponent as CloseButton } from '../../Assets/close.svg';
-import { ReactComponent as AuthorButton } from '../../Assets/write.svg';
-import { ReactComponent as UserAvatar } from '../../Assets/user-avatar.svg';
-import { ReactComponent as UserEmail } from '../../Assets/email.svg';
-import { ReactComponent as UserPhone } from '../../Assets/phone.svg';
+import { ReactComponent as CloseButton } from '../../assets/close.svg';
+import { ReactComponent as AuthorButton } from '../../assets/write.svg';
+import { ReactComponent as UserAvatar } from '../../assets/user-avatar.svg';
+import { ReactComponent as UserEmail } from '../../assets/email.svg';
+import { ReactComponent as UserPhone } from '../../assets/phone.svg';
 
 import { ReactComponent as UserWebsite } from '../../Assets/website.svg';
 import * as S from './styles';

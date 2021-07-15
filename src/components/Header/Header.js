@@ -1,6 +1,6 @@
-import { ReactComponent as Logo } from '../../Assets/logo.svg';
-import { ReactComponent as LogoGithub } from '../../Assets/github.svg';
-import { ReactComponent as LogoLinkedin } from '../../Assets/linkedin.svg';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { ReactComponent as LogoGithub } from '../../assets/github.svg';
+import { ReactComponent as LogoLinkedin } from '../../assets/linkedin.svg';
 
 import * as S from './styles.js';
 

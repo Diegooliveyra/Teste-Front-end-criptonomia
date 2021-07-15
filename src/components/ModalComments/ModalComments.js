@@ -3,9 +3,9 @@ import useFetch from '../../hooks/useFetch';
 import { Loading } from '../../Helper/Loading';
 import { GET_COMMENTS } from '../../services/api';
 
-import { ReactComponent as CommnentsButton } from '../../Assets/comments.svg';
-import { ReactComponent as CloseButton } from '../../Assets/close.svg';
-import { ReactComponent as UserEmail } from '../../Assets/email.svg';
+import { ReactComponent as CommnentsButton } from '../../assets/comments.svg';
+import { ReactComponent as CloseButton } from '../../assets/close.svg';
+import { ReactComponent as UserEmail } from '../../assets/email.svg';
 
 import * as S from './styles';
 

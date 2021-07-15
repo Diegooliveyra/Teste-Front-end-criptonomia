@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { ModalComments } from '../ModalComments/ModalComments';
 import { ModalUser } from '../ModalUser/ModalUser';
 
-import img from '../../Assets/dog.jpg';
+import img from '../../assets/dog.jpg';
 
-import { ReactComponent as AuthorButton } from '../../Assets/write.svg';
-import { ReactComponent as CommnentsButton } from '../../Assets/comments.svg';
+import { ReactComponent as AuthorButton } from '../../assets/write.svg';
+import { ReactComponent as CommnentsButton } from '../../assets/comments.svg';
 
 import * as S from './style';
 import { Title } from '../../styles/GlobalStyle';
