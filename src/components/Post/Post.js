@@ -25,12 +25,12 @@ export const Post = ({ dataPost }) => {
     request(endpoint, options);
   }, [request, userId]);
 
-  function handleClick(id) {
+  function handleGetUserData(id) {
     setUserId(id);
     setModalUser(true);
   }
 
-  function handleComments(id) {
+  function handleGetComments(id) {
     setPostId(id);
     setModalComments(true);
   }
@@ -53,11 +53,11 @@ export const Post = ({ dataPost }) => {
                 <Title>{post.title}</Title>
                 <p>{post.body}</p>
                 <footer>
-                  <button onClick={() => handleClick(post.userId)}>
+                  <button onClick={() => handleGetUserData(post.userId)}>
                     <AuthorButton />
                     About to author
                   </button>
-                  <button onClick={() => handleComments(post.id)}>
+                  <button onClick={() => handleGetComments(post.id)}>
                     <CommnentsButton />
                     Comments
                   </button>
