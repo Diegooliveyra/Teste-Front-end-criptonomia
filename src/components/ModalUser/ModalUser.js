@@ -4,7 +4,7 @@ import { ReactComponent as UserAvatar } from '../../assets/user-avatar.svg';
 import { ReactComponent as UserEmail } from '../../assets/email.svg';
 import { ReactComponent as UserPhone } from '../../assets/phone.svg';
 
-import { ReactComponent as UserWebsite } from '../../Assets/website.svg';
+import { ReactComponent as UserWebsite } from '../../assets/website.svg';
 import * as S from './styles';
 
 import { useEffect } from 'react';
