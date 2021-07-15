@@ -7,9 +7,10 @@ export const Footer = styled.footer`
   align-items: center;
 
   margin-top: 30px;
-  padding: 30px;
+  padding: 30px 10px;
   background-color: #fff;
   border-top: 1px solid #ccc;
+  text-align: center;
 
   a {
     color: var(--brand-primary-color);

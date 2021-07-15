@@ -74,21 +74,41 @@ export const ModalStyle = styled.div`
 
   h2 {
     font-size: 20px;
+    position: relative;
+    margin-left: 10px;
 
     &:first-letter {
       text-transform: capitalize;
+    }
+
+    &::before {
+      content: '';
+      display: flex;
+      width: 4px;
+      height: 100%;
+      background: #ccc;
+      position: absolute;
+      left: -10px;
     }
   }
 
   span {
     font-size: 14px;
     display: block;
-    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    svg {
+      width: 20px;
+    }
   }
 
   p {
     font-size: 16px;
     line-height: 24px;
+    margin: 10px 0;
 
     &:first-letter {
       text-transform: capitalize;

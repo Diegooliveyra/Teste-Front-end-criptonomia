@@ -5,6 +5,7 @@ import { GET_COMMENTS } from '../../services/api';
 
 import { ReactComponent as CommnentsButton } from '../../assets/comments.svg';
 import { ReactComponent as CloseButton } from '../../assets/close.svg';
+import { ReactComponent as UserEmail } from '../../assets/email.svg';
 
 import * as S from './styles';
 
@@ -36,8 +37,10 @@ export const ModalComments = ({ postId, setModal }) => {
               {data.map((comment) => (
                 <li key={comment.id}>
                   <h2>{comment.name}</h2>
-                  <span>Email: {comment.email}</span>
                   <p>{comment.body}</p>
+                  <span>
+                    <UserEmail /> {comment.email}
+                  </span>
                 </li>
               ))}
             </ul>
