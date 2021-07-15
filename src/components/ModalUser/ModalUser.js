@@ -3,22 +3,25 @@ import { ReactComponent as AuthorButton } from '../../assets/write.svg';
 import { ReactComponent as UserAvatar } from '../../assets/user-avatar.svg';
 import { ReactComponent as UserEmail } from '../../assets/email.svg';
 import { ReactComponent as UserPhone } from '../../assets/phone.svg';
-
 import { ReactComponent as UserWebsite } from '../../assets/website.svg';
-import * as S from './styles';
 
 import { useEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
 import { GET_USER } from '../../services/api';
+import { Loading } from '../../helper/Loading';
+
+import * as S from './styles';
 
 export const ModalUser = ({ userId, setModal }) => {
-  const { request, data } = useFetch();
+  const { request, data, loading, error } = useFetch();
 
   useEffect(() => {
     const { endpoint, options } = GET_USER(userId);
     request(endpoint, options);
   }, [request, userId]);
 
+  if (loading) return <Loading />;
+  if (error) return <h1>Houve um erro </h1>;
   if (data)
     return (
       <S.ModalContainer>
