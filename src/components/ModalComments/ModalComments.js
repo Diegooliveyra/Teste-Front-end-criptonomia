@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
-import { Loading } from '../../Helper/Loading';
+import { Loading } from '../../helper/Loading';
 import { GET_COMMENTS } from '../../services/api';
 
 import { ReactComponent as CommnentsButton } from '../../assets/comments.svg';
