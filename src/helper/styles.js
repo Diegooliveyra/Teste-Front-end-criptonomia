@@ -6,7 +6,11 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 15;
+  background: white;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 // Loader by https://projects.lukehaas.me/css-loaders/
