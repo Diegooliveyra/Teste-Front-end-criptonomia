@@ -1,29 +1,20 @@
-import { useEffect, useState } from 'react';
-import useFetch from '../../hooks/useFetch';
-import { GET_USER } from '../../services/api';
+import { useState } from 'react';
 import { ModalComments } from '../ModalComments/ModalComments';
 import { ModalUser } from '../ModalUser/ModalUser';
-import { Loading } from '../../helper/Loading';
 
-import img from '../../assets/dog.jpg';
+import img from '../../Assets/dog.jpg';
 
-import { ReactComponent as AuthorButton } from '../../assets/write.svg';
-import { ReactComponent as CommnentsButton } from '../../assets/comments.svg';
+import { ReactComponent as AuthorButton } from '../../Assets/write.svg';
+import { ReactComponent as CommnentsButton } from '../../Assets/comments.svg';
 
 import * as S from './style';
 import { Title } from '../../styles/GlobalStyle';
 
 export const Post = ({ dataPost }) => {
-  const { request, loading, data, error } = useFetch();
   const [userId, setUserId] = useState(1);
   const [postId, setPostId] = useState(1);
   const [modalUser, setModalUser] = useState(false);
   const [modalComments, setModalComments] = useState(false);
-
-  useEffect(() => {
-    const { endpoint, options } = GET_USER(userId);
-    request(endpoint, options);
-  }, [request, userId]);
 
   function handleGetUserData(id) {
     setUserId(id);
@@ -35,12 +26,10 @@ export const Post = ({ dataPost }) => {
     setModalComments(true);
   }
 
-  if (loading) return <Loading />;
-  if (error) return <h1>Houve um erro </h1>;
-  if (data)
+  if (dataPost)
     return (
       <S.PostContainer>
-        {modalUser && <ModalUser data={data} setModal={setModalUser} />}
+        {modalUser && <ModalUser userId={userId} setModal={setModalUser} />}
         {modalComments && (
           <ModalComments postId={postId} setModal={setModalComments} />
         )}
