@@ -36,6 +36,7 @@ export const Post = ({ dataPost }) => {
   }
 
   if (loading) return <Loading />;
+  if (error) return <h1>Houve um erro </h1>;
   if (data)
     return (
       <S.PostContainer>

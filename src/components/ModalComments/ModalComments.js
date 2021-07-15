@@ -19,6 +19,7 @@ export const ModalComments = ({ postId, setModal }) => {
   }, [request, postId]);
 
   if (loading) return <Loading />;
+  if (error) return <h1>Houve um erro </h1>;
   if (data)
     return (
       <S.ModalContainer>
