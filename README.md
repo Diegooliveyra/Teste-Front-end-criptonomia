@@ -17,7 +17,7 @@ Você pode conferir o resultado final em: https://teste-front-end-criptonomia.ve
 
 ## 🎯 Objetivo do projeto
 
-O projeto faz parte do processo seletivo da Criptonamia para o cargo de Desenvolvedor Front-End
+O projeto faz parte do processo seletivo da Criptonomia para o cargo de Desenvolvedor Front-End
 
 Os seguintes itens serão analisados como avaliação técnica da demanda:
 
