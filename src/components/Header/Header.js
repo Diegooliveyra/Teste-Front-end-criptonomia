@@ -11,12 +11,20 @@ export const Header = () => {
         <Logo />
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/diego-de-oliveira-brito/">
+            <a
+              href="https://www.linkedin.com/in/diego-de-oliveira-brito/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LogoLinkedin />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/diego-de-oliveira-brito/">
+            <a
+              href="https://github.com/Diegooliveyra"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LogoGithub />
             </a>
           </li>
