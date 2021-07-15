@@ -43,6 +43,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   color: var(--brand-primary-color);
+  font-size: 22px;
 
   &:first-letter {
     text-transform: capitalize;
