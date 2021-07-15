@@ -30,6 +30,7 @@ export const ModalStyle = styled.div`
   @media (max-width: 680px) {
     height: 95vh;
     margin: 10px;
+    overflow-y: scroll;
   }
 
   header {
@@ -72,7 +73,7 @@ export const ModalStyle = styled.div`
 
       svg {
         width: 30px;
-        margin-left: 15px;
+        margin-left: 5px;
       }
     }
   }
@@ -94,8 +95,11 @@ export const ModalStyle = styled.div`
 `;
 
 export const ModalUserAvatar = styled.div`
+  width: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 
   svg {
     margin-right: 10px;
